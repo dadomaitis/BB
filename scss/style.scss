@@ -143,12 +143,19 @@ div.front{
                 }
             }
 
+            p {
+                width: 167px;
+                height: 19px;
+                font-weight: 600;
+                margin: 30px 0 0 51px;
+            }
+
             h4 {
                 line-height: 57px;
                 background: #41D395;
                 color: $text;
                 text-align: center;
-                margin-top: 118px;
+                margin-top: 70px;
                 border-radius: 0 0 5px 5px;
             }
 
@@ -165,3 +172,98 @@ div.front{
     
 }
 
+div.socialmedia {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    flex-direction: row;
+
+    .text {
+        width: 30%;
+        margin-left: 151px;
+        margin-top: 19px;
+
+        h3 {
+            font-size: 20px;
+            line-height: 24px;
+            color: #333333;
+        }
+
+        p {
+            width: 394px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #86878B;
+        }
+    }
+
+    .icons {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        
+        a {
+            height: 30px;
+        }
+    }
+}
+
+.tabs {
+    width: 100%;
+    height: 595px;
+    background: linear-gradient(270deg, #6695e274 0%, #e278666c 100%), url("/app/images/christoffer-engstrom-503481-unsplash.png") ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+
+    .buttons {
+        height: 595px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 21px;
+        margin-left: 151px;
+
+        button{
+            width: 100px;
+            height: 100px;
+            border: none;
+            background: #A37169;
+            color: $text;
+
+            &:hover {
+                background: #E27866;
+            }
+        }
+        
+    }
+
+    h1 {
+        width: 509px;
+        height: 124px;
+        font-size: 36px;
+        color: $text;
+        margin: 150px 0 33px 54px;
+    }
+
+    p {
+        width: 517px;
+        height: 138px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $text;
+        margin-left: 52px;
+    }
+
+    .photos {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
