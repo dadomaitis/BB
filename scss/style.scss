@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
+@mixin Finger {
+    cursor: url("/app/images/description-cursor-icon-with-shadow-32.png"), auto}
+
+
 $text: #FFFFFF;
 $navcol: #1C1C1C;
 
-@mixin Finger {
-    cursor: url("/app/images/description-cursor-icon-with-shadow-32.png"), auto;
-}
 
 
 
@@ -222,7 +223,7 @@ div.socialmedia {
     }
 }
 
-.tabs {
+div.tabs {
     width: 100%;
     height: 595px;
     background: linear-gradient(270deg, #6695e274 0%, #e278666c 100%), url("/app/images/christoffer-engstrom-503481-unsplash.png") ;
@@ -282,6 +283,81 @@ div.socialmedia {
         
         img {
             @include Finger();
+        }
+    }
+}
+
+div.content {
+    width: 100%;
+    height: 596px;
+    background: $navcol;
+    display: flex;
+    color: $text;
+
+    div.img {
+        width: 50%;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 169px;
+        }
+    
+    }
+    
+    .text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            width: 314px;
+            font-size: 30px;
+            line-height: 43px;
+        }
+
+        img {
+            width: 200px;
+            height: 2px;
+            margin: 30px 0 30px 0;
+        }
+
+        p {
+            width: 451px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .row1, .row2 {
+            display: flex;
+            align-items: center;
+            
+            i{
+                text-align: center;
+                line-height: 50px;
+                font-size: 18px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background: #E27866;
+                margin-right: 30px;
+            }
+
+            .info {
+                h3 {
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-bottom: 6px;
+                }
+                
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                };
+            }
         }
     }
 }
