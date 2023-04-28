@@ -3,6 +3,11 @@
 $text: #FFFFFF;
 $navcol: #1C1C1C;
 
+@mixin Finger {
+    cursor: url("/app/images/description-cursor-icon-with-shadow-32.png"), auto;
+}
+
+
 
 *{
     margin: 0;
@@ -28,6 +33,7 @@ nav {
     img {
         height: 52.6px;
         margin-left: -90px;
+        @include Finger()
     }
 
     div.a{
@@ -40,6 +46,7 @@ nav {
         font-size: 18px;
         color: $text;
         text-align: right;
+        @include Finger()
     }
 }
 
@@ -89,7 +96,7 @@ div.front{
             border-color: $text;
             background: none;
             margin-top: 43px;
-            cursor: pointer;
+            @include Finger();
         }
     
     }
@@ -150,13 +157,17 @@ div.front{
                 margin: 30px 0 0 51px;
             }
 
-            h4 {
+            button {
+                width: 360px;
                 line-height: 57px;
                 background: #41D395;
+                border: none;
                 color: $text;
+                font-size: 18px;
                 text-align: center;
                 margin-top: 70px;
                 border-radius: 0 0 5px 5px;
+                @include Finger()
             }
 
 
@@ -206,6 +217,7 @@ div.socialmedia {
         
         a {
             height: 30px;
+            @include Finger();
         }
     }
 }
@@ -229,6 +241,7 @@ div.socialmedia {
         margin-left: 151px;
 
         button{
+            
             width: 100px;
             height: 100px;
             border: none;
@@ -237,6 +250,7 @@ div.socialmedia {
 
             &:hover {
                 background: #E27866;
+                @include Finger();
             }
         }
         
@@ -265,5 +279,9 @@ div.socialmedia {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+        img {
+            @include Finger();
+        }
     }
 }
