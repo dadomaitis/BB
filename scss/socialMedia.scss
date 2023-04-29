@@ -38,3 +38,9 @@ div.socialmedia {
         }
     }
 }
+
+@media (max-width: 768px) {
+    div.socialmedia {
+        display: none;
+    }
+}
