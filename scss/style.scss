@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
-@mixin Finger {cursor: url("app/images/description-cursor-icon-with-shadow-32.png"), auto}
+@mixin Finger {cursor: url("../app/images/description-cursor-icon-with-shadow-32.png"), auto}
 
 
 $text: #FFFFFF;
@@ -16,6 +16,7 @@ $optionsTopBckg: #333333;
     font-family: Montserrat;
     // outline: 1px solid red;
 }
+
 html{
     scroll-behavior: smooth;
 }
