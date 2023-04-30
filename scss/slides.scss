@@ -79,3 +79,10 @@ div.slides {
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    div.slides {
+        display: none;
+    }
+}

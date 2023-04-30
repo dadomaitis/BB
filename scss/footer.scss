@@ -30,3 +30,20 @@ footer {
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        height: 160px;
+
+        .icons {
+            margin-top: 30px;
+            gap: 70px;
+        }
+
+        p {
+            width: 80%;
+            line-height: 100px;
+        }
+    }
+}

@@ -89,3 +89,30 @@ div.content3 {
         }
     }
 }
+
+@media (max-width: 768px) {
+    
+    div.content3 {
+        height: 2000px;
+
+        p.op {
+            text-align: center;
+        }
+
+        .options {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+
+            .option1, .option2, .option3 {
+                width: 100%;
+
+                div.divider, div.divider2 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}

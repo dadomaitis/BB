@@ -26,3 +26,21 @@ nav {
         @include Finger()
     }
 }
+
+@media (max-width: 768px) {
+
+    nav {
+        position: relative;
+
+        img {
+            margin: 0;
+            width: 100%;
+        }
+
+        div.a{
+            width: 0%;
+            display: none;
+        }
+    }
+}
+    
