@@ -5,30 +5,34 @@ div.socialmedia {
     flex-direction: row;
 
     .text {
-        width: 30%;
-        margin-left: 151px;
-        margin-top: 19px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-left: 150px;
 
         h3 {
             font-size: 20px;
             line-height: 24px;
             color: #333333;
+            text-align: left;
         }
 
         p {
-            width: 394px;
+            min-width: 330px;
             font-size: 14px;
             line-height: 20px;
             color: #86878B;
+            text-align: left;
         }
     }
 
     .icons {
-        width: 70%;
+        width: 50%;
         display: flex;
+        align-self: center;
         align-items: center;
-        justify-content: center;
-        gap: 100px;
+        justify-content: space-around;
         
         a {
             @include Finger();
