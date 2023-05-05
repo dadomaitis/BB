@@ -34,7 +34,38 @@ const swiper = new Swiper('.swiper', {
 
   breakpoints: {
         1155: {
+            direction: 'horizontal',
             slidesPerView: 3
         }
     }
 });
+
+
+// Slides (reviews)
+const swiper1 = new Swiper('.swiper1', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination1',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next1',
+      prevEl: '.swiper-button-prev1',
+    },
+
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+  });
