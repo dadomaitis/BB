@@ -39,6 +39,12 @@ div.socialmedia {
             img {
                 height: 30px;
             }
+            color: #eca69b;
+        }
+
+        i {
+            font-size: 30px;
+            @include Finger();
         }
     }
 }
