@@ -16,3 +16,25 @@ function openTab(evt, TabFunction) {
 
 // First load tab
 document.getElementById("register").style.display = "flex";
+
+
+
+
+// Options slides
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+        1155: {
+            slidesPerView: 3
+        }
+    }
+});

@@ -25,6 +25,8 @@ div.content3 {
         line-height: 20px;
         margin-bottom: 83px;
     }
+
+    
     
     .options {
         display: flex;
@@ -88,17 +90,36 @@ div.content3 {
             }
         }
     }
-}
-@media (max-width: 1155px) {
-    div.content3 {
-        height: auto;
-        .options {
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 50px;
-        }
+   
+    .swiper {
+        width: 100%;
+        height: 600px;
     }
+
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 }
+
+@media (max-width: 1155px) and (min-width: 768px) {
+    .swiper {
+      width: 100%;
+      max-width: 1155px;
+    }
+  
+    .option1, .option2, .option3 {
+      width: 220px;
+    }
+  }
 
 @media (max-width: 768px) {
     
@@ -123,6 +144,10 @@ div.content3 {
                 }
             }
         }
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
     }
     
 }
