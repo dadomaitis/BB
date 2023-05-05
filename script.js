@@ -13,3 +13,6 @@ function openTab(evt, TabFunction) {
     document.getElementById(TabFunction).style.display = "flex";
     evt.currentTarget.className += " active";
 }
+
+// First load tab
+document.getElementById("register").style.display = "flex";

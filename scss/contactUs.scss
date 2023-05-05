@@ -94,6 +94,7 @@ div.contactUs {
                 width: 80% !important;
                 height: 20% !important;
                 font-size: 20px;
+                @include Finger()
             }
         }
     }
