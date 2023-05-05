@@ -6,7 +6,6 @@ div.front{
     display: flex;
     margin: auto;
 
-    
     .part1 {
         width: 50%;
         display: flex;
@@ -54,7 +53,6 @@ div.front{
             margin-top: 43px;
             @include Finger();
         }
-    
     }
 
     .part2 {
@@ -96,11 +94,9 @@ div.front{
                 color: #D8D8D8;
 
                 input {
-                    width: 90%;
+                    width: 70%;
                     border: none;
                     border-bottom: 2px solid #D8D8D8;
-                    
-                    
                 }
             }
 
@@ -111,6 +107,51 @@ div.front{
                 margin: 30px 0 0 51px;
             }
 
+            .input11 {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 9px;
+                line-height: 27px;
+                margin-top: 20px;
+
+                input {
+                    appearance: none;
+                  
+                    border-radius: 100%;
+                    width: 14px;
+                    height: 14px;
+                  
+                    border: 2px solid #41D395;
+                    transition: 0.2s;
+                    margin-right: 5px;
+                    margin-left: 10px;
+                  
+                    position: relative;
+                    margin-bottom: 2px;
+                }
+
+                input[type="radio"]:checked+label {
+                    font-weight: bold;
+                }
+
+                input:checked {
+                    border: 2px solid #41D395;
+                    background: white;
+
+                    &:after {
+                        content: "";
+                        width:6px;
+                        height: 6px;
+                        border-radius: 10px;
+                        margin: 2.5px 2.2px; 
+                        position: absolute;
+                        background:  #41D395;
+                    }  
+                } 
+            }
+
             button {
                 width: 360px;
                 line-height: 57px;
@@ -119,7 +160,7 @@ div.front{
                 color: $text;
                 font-size: 18px;
                 text-align: center;
-                margin-top: 70px;
+                margin-top: 25px;
                 border-radius: 0 0 5px 5px;
                 @include Finger()
             }
