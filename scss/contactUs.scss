@@ -47,9 +47,49 @@ div.contactUs {
             }
         }
 
-        p {
-            color: black;
-            margin: 20px;
+        .input22 {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 9px;
+            line-height: 27px;
+            margin: 20px 120px 20px 0;
+
+            input {
+                appearance: none;
+              
+                border-radius: 100%;
+                width: 14px;
+                height: 14px;
+              
+                border: 2px solid #41D395;
+                transition: 0.2s;
+                margin-right: 5px;
+                margin-left: 10px;
+              
+                position: relative;
+                margin-bottom: 2px;
+            }
+
+            input[type="radio"]:checked+label {
+                font-weight: bold;
+            }
+
+            input:checked {
+                border: 2px solid #41D395;
+                background: white;
+
+                &:after {
+                    content: "";
+                    width:6px;
+                    height: 6px;
+                    border-radius: 10px;
+                    margin: 2.5px 2.2px; 
+                    position: absolute;
+                    background:  #41D395;
+                }  
+            } 
         }
 
         button {
@@ -59,6 +99,10 @@ div.contactUs {
             background: #41D395;
             border: none;
             border-radius: 5px;
+
+            &:hover {
+                @include Finger()
+            }
         }
     }
     
@@ -90,11 +134,14 @@ div.contactUs {
                 
             }
 
+            .input22{
+                margin: 20px 0 20px 0  !important;
+            }
+
             button {
                 width: 80% !important;
                 height: 20% !important;
                 font-size: 20px;
-                @include Finger()
             }
         }
     }

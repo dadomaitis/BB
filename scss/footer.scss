@@ -19,6 +19,11 @@ footer {
                 height: 20px;
             }
         }
+
+        i{
+            font-size: 20px ;
+            @include Finger();
+        }
     }
 
     p {
@@ -38,12 +43,16 @@ footer {
 
         .icons {
             margin-top: 30px;
-            gap: 70px;
+            gap: 50px;
 
             a{
                 img{
                     height: 30px;
                 }
+            }
+
+            i{
+                font-size: 30px ;
             }
         }
 
