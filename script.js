@@ -46,26 +46,27 @@ const swiper1 = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination1',
+    // slidesPerView: 3,
+    // slidesPerGroup: 2,
+    // spaceBetween: 100,
+    
+    autoplay: {
+        delay: 5000,
     },
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next1',
-      prevEl: '.swiper-button-prev1',
+    
+
+    pagination: {
+      el: '.swiper-pagination1',
     },
 
     breakpoints: {
         768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 1,
         },
-        1024: {
+        1155: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerGroup: 2,
         },
     },
   });
