@@ -69,4 +69,27 @@ const swiper1 = new Swiper('.swiper1', {
             slidesPerGroup: 2,
         },
     },
-  });
+});
+
+
+
+//   NAV
+
+const burger = document.getElementById("burger")
+const sideNav = document.querySelector("mobile-nav")
+const links = document.getElementsByClassName("link")
+
+
+burger.addEventListener("click", function(){
+    this.classList.toggle("rotateZ")
+    sideNav.classList.toggle("transformY")
+})
+
+
+// resize event
+window.addEventListener("resize", function() {
+    if(window.innerWidth > 768){
+        burger.classList.remove("rotateZ")
+        sideNav.classList.remove("transformY")
+    }
+})
