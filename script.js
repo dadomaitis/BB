@@ -1,3 +1,39 @@
+"use strict"
+//   NAV+++++++++++++++++++++++++++++++++++++++++++++++++++=
+const burger = document.getElementById("burger")
+const sideNav = document.querySelector(".mobile-nav")
+const links = document.getElementsByClassName("link")
+const mobs = document.getElementsByClassName("mob")
+
+burger.addEventListener("click", function(){
+
+    this.classList.toggle("rotateZ")
+    sideNav.classList.toggle("transformY")
+})
+
+for(var i = 0; i < links.length; i++){
+    links[i].addEventListener("click", function(){
+
+        // rmove active class
+        for(var link of links) {
+            link.classList.remove("active")
+        }
+
+        // adds active class to link
+        this.classList.add("active")
+    })
+}
+
+// closes mob-nav when cliked on link
+for(var i = 0; i < mobs.length; i++){
+    mobs[i].addEventListener("click", function(){
+
+        sideNav.classList.toggle("transformY")
+        burger.classList.remove("rotateZ")
+
+    })
+}
+
 // Tabs +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 function openTab(evt, TabFunction) {
     var i, tabcontent, tablinks;
@@ -70,38 +106,3 @@ const swiper1 = new Swiper('.swiper1', {
         },
     },
 });
-
-//   NAV+++++++++++++++++++++++++++++++++++++++++++++++++++=
-const burger = document.getElementById("burger")
-const sideNav = document.querySelector(".mobile-nav")
-const links = document.getElementsByClassName("link")
-const mobs = document.getElementsByClassName("mob")
-
-burger.addEventListener("click", function(){
-
-    this.classList.toggle("rotateZ")
-    sideNav.classList.toggle("transformY")
-})
-
-for(var i = 0; i < links.length; i++){
-    links[i].addEventListener("click", function(){
-
-        // rmove active class
-        for(var link of links) {
-            link.classList.remove("active")
-        }
-
-        // adds active class to link
-        this.classList.add("active")
-    })
-}
-
-// closes mob-nav when cliked on link
-for(var i = 0; i < mobs.length; i++){
-    mobs[i].addEventListener("click", function(){
-
-        sideNav.classList.toggle("transformY")
-        burger.classList.remove("rotateZ")
-
-    })
-}
