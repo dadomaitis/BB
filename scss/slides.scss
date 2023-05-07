@@ -20,6 +20,10 @@ div.slides {
     }
 
     .slidesContainer {
+        
+        &:hover {
+            @include Finger()
+        }
 
         .slide1, .slide2, .slide3, .slide4 {
             display: flex;
