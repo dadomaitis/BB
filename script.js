@@ -18,9 +18,6 @@ function openTab(evt, TabFunction) {
 // First load tab
 document.getElementById("register").style.display = "flex";
 
-
-
-
 // Options slides ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -38,22 +35,22 @@ const swiper = new Swiper('.swiper', {
   },
 
   breakpoints: {
-        1155: {
+        768: {
             direction: 'horizontal',
+            slidesPerView: 1
+        },
+
+        1155: {
             slidesPerView: 3
         }
     }
 });
-
 
 // Slides (reviews)++++++++++++++++++++++++++++++++++++++++++++++++++++
 const swiper1 = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    // slidesPerView: 3,
-    // slidesPerGroup: 2,
-    // spaceBetween: 100,
     
     autoplay: {
         delay: 5000,
@@ -74,22 +71,17 @@ const swiper1 = new Swiper('.swiper1', {
     },
 });
 
-
-
 //   NAV+++++++++++++++++++++++++++++++++++++++++++++++++++=
-
 const burger = document.getElementById("burger")
 const sideNav = document.querySelector(".mobile-nav")
 const links = document.getElementsByClassName("link")
 const mobs = document.getElementsByClassName("mob")
-
 
 burger.addEventListener("click", function(){
 
     this.classList.toggle("rotateZ")
     sideNav.classList.toggle("transformY")
 })
-
 
 for(var i = 0; i < links.length; i++){
     links[i].addEventListener("click", function(){
@@ -101,14 +93,13 @@ for(var i = 0; i < links.length; i++){
 
         // adds active class to link
         this.classList.add("active")
-
     })
 }
 
 // closes mob-nav when cliked on link
 for(var i = 0; i < mobs.length; i++){
     mobs[i].addEventListener("click", function(){
-        
+
         sideNav.classList.toggle("transformY")
         burger.classList.remove("rotateZ")
 

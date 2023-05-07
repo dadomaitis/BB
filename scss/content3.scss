@@ -128,7 +128,7 @@ div.content3 {
 @media (max-width: 768px) {
     
     div.content3 {
-        height: 2000px;
+        height: 900px;
 
         p.op {
             text-align: center;
@@ -141,7 +141,7 @@ div.content3 {
             gap: 50px;
 
             .option1, .option2, .option3 {
-                width: 100%;
+                width: 80%;
 
                 div.divider, div.divider2 {
                     width: 100%;
@@ -149,26 +149,20 @@ div.content3 {
             }
         }
 
-        .swiper-button-next,
+        .swiper-button-next{
+            margin-right: -10px;
+        }
         .swiper-button-prev {
-            display: none;
+            margin-left: -10px;
         }
 
         div.swiper {
-            width:80%;
-            height: 2000px;
-            display: flex;
-            flex-direction: column !important;
-            flex-wrap: wrap;
+            width:100%;
+            height: 600px;
         }
 
-        div.swiper-wrapper {
-            height: 2000px;
-            display: flex;
-            flex-direction: column !important;
-            flex-wrap: wrap;
+        .swiper-wrapper {
+            width:100%;
         }
-
-
     }
 }

@@ -94,7 +94,7 @@ div.slides {
 
     .swiper-pagination1 {
         position: relative;
-        top: -40px;
+        top: -20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -125,7 +125,13 @@ div.slides {
   }
 
   @media (min-width: 768px) {
-    .swiper1 {
-      width: 50%;
+    
+        .swiper1 {
+            width: 50%;
+          }
+        div.slides { .swiper-pagination1 {
+              top: -40px;
+          }
     }
+    
   }
