@@ -110,7 +110,6 @@ div.content3 {
     .swiper-button-next,
     .swiper-button-prev {
         color: wheat;
-        margin: 0 100px 0 100px;
         @include Finger()
     }
 }

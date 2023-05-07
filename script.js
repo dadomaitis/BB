@@ -1,3 +1,4 @@
+// Tabs +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 function openTab(evt, TabFunction) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -20,11 +21,15 @@ document.getElementById("register").style.display = "flex";
 
 
 
-// Options slides
+// Options slides ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+
+  autoplay: {
+    delay: 5000,
+},
 
   // Navigation arrows
   navigation: {
@@ -41,7 +46,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-// Slides (reviews)
+// Slides (reviews)++++++++++++++++++++++++++++++++++++++++++++++++++++
 const swiper1 = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
@@ -53,8 +58,6 @@ const swiper1 = new Swiper('.swiper1', {
     autoplay: {
         delay: 5000,
     },
-  
-    
 
     pagination: {
       el: '.swiper-pagination1',
@@ -73,23 +76,41 @@ const swiper1 = new Swiper('.swiper1', {
 
 
 
-//   NAV
+//   NAV+++++++++++++++++++++++++++++++++++++++++++++++++++=
 
 const burger = document.getElementById("burger")
-const sideNav = document.querySelector("mobile-nav")
+const sideNav = document.querySelector(".mobile-nav")
 const links = document.getElementsByClassName("link")
+const mobs = document.getElementsByClassName("mob")
 
 
 burger.addEventListener("click", function(){
+
     this.classList.toggle("rotateZ")
     sideNav.classList.toggle("transformY")
 })
 
 
-// resize event
-window.addEventListener("resize", function() {
-    if(window.innerWidth > 768){
+for(var i = 0; i < links.length; i++){
+    links[i].addEventListener("click", function(){
+
+        // rmove active class
+        for(var link of links) {
+            link.classList.remove("active")
+        }
+
+        // adds active class to link
+        this.classList.add("active")
+
+    })
+}
+
+// closes mob-nav when cliked on link
+for(var i = 0; i < mobs.length; i++){
+    mobs[i].addEventListener("click", function(){
+        
+        sideNav.classList.toggle("transformY")
         burger.classList.remove("rotateZ")
-        sideNav.classList.remove("transformY")
-    }
-})
+
+    })
+}
