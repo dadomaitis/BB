@@ -37,15 +37,10 @@ nav {
         z-index: 2;
         line-height: 70px;
         transition: 0.3s;
-    }
 
-    .link:hover {
-    font-weight: 500;
-    }
-
-    .link:hover:before {
-        opacity: 1;
-        height: 3px;
+        &:hover {
+        font-weight: 500;
+        }
     }
 }
 
@@ -60,10 +55,10 @@ nav {
 
     .link {
         display: block;
-    }
 
-    .link:hover {
-        font-weight: 500;
+        &:hover {
+            font-weight: 500;
+        }
     }
 }
 
