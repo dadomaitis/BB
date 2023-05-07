@@ -53,6 +53,7 @@ function openTab(evt, TabFunction) {
 
 // First load tab
 document.getElementById("register").style.display = "flex";
+document.getElementById("ftab").classList.toggle("active");
 
 // Options slides ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 const swiper = new Swiper('.swiper', {
