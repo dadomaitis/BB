@@ -27,20 +27,27 @@ div.tabs {
             background: #A37169;
             color: $text;
 
+            span{
+                display: inline-block;
+                transform: rotate(-45deg);
+                transition: 0.3s;
+            }
+
             &:hover {
                 background: #E27866;
                 @include Finger();
-            }
 
-            
+                span {
+                    transform: rotate(0deg);
+                }
+            }
         }
 
         button.active {
             background: #5f2d2d ;
         }
-        
     }
-
+      
     div.tabcontent {
         display: none;
         div.text {
